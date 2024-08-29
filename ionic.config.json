@@ -1,7 +1,0 @@
-{
-  "name": "ionic-webinar",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
