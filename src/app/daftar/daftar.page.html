@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="backbtn" routerLink="/welcome">
+        <img src="../../assets/back.svg" />
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="ion-padding container">
+    <h1>Pendaftaran</h1>
+    <div class="form-container">
+      <ion-item>
+        <ion-label position="stacked">Name</ion-label>
+        <ion-input type="text" [(ngModel)]="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input type="text" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input type="password"  [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Konfirmasi Password</ion-label>
+        <ion-input type="password"  [(ngModel)]="c_password"></ion-input>
+      </ion-item>
+      <ion-button (click)="daftar()" expand="block" >
+        Login
+      </ion-button>
+      <div class="sign-up">
+        have an account? <ion-button color="dark" fill="clear" routerLink="/login" routerDirection="forward">Login</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
